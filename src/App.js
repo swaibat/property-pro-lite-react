@@ -1,26 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Nav from './includes/nav';
+import Footer from './includes/footer';
+import Home from './pages/index';
+import Dashboard from './pages/dashboard';
+import Ads from './pages/all_ads';
+import Ad from './pages/specific_ad';
+import CreateAd from './pages/createAd';
+import EditAd from './pages/editAd';
+import MyAds from './pages/myAds';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <div className={App}>
+        <Nav/>
+          <Switch>
+            <Route path="/" exact component={Home}/>
+            <Route path="/dashboard" component={Dashboard}/>
+            <Route path="/ads" component={Ads}/>
+            <Route path="/ad" component={Ad}/>
+            <Route path="/create-ad" component={CreateAd}/>
+            <Route path="/edit-ad" component={EditAd}/>
+            <Route path="/my-ads" component={MyAds}/>
+          </Switch>
+          <Footer/>
+      </div>
+      </Router>
+    );
 }
 
 export default App;
