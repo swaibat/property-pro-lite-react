@@ -7,7 +7,9 @@ import Ads from './pages/all_ads';
 import Ad from './pages/specific_ad';
 import CreateAd from './pages/createAd';
 import EditAd from './pages/editAd';
+import MyAds from './pages/myAds';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
             <Route path="/ad" component={Ad}/>
             <Route path="/create-ad" component={CreateAd}/>
             <Route path="/edit-ad" component={EditAd}/>
+            <Route path="/my-ads" component={MyAds}/>
           </Switch>
           <Footer/>
       </div>
