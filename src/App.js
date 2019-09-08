@@ -4,6 +4,7 @@ import Footer from './includes/footer';
 import Home from './pages/index';
 import Dashboard from './pages/dashboard';
 import Ads from './pages/all_ads';
+import Ad from './pages/specific_ad';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" exact component={Home}/>
             <Route path="/dashboard" component={Dashboard}/>
             <Route path="/ads" component={Ads}/>
+            <Route path="/ad" component={Ad}/>
           </Switch>
           <Footer/>
       </div>
