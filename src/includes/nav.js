@@ -1,13 +1,13 @@
 import React from 'react';
-
+import {  } from "module";
 function Nav() {
   return (
     <nav className="flex-x flex-y-center fixed-top shadow padding-y-1 full-width">
             <div className="logo margin-l-3"><a href="index.html">P<span className="tracking-in-contract">roperty Pro</span></a></div>
             <div id="logged-out" className="margin-l-auto margin-r-3 d-flex">
                 <div className="d-flex">
-                    <button  className="btn teal white-txt  margin-l-4">signin</button>
-                    <button className="btn white blue-txt  margin-l-4">signup</button>
+                    <button onClick="signin()" className="btn teal white-txt  margin-l-4">signin</button>
+                    <button onClick="signup()" className="btn white blue-txt  margin-l-4">signup</button>
                 </div>
             </div> 
             <div id="logged-in"  className="d-none margin-l-auto margin-r-3 flex-x">
@@ -30,7 +30,7 @@ function Nav() {
                     <li className="padding-y-2"><a><i className="pro-cog-lite margin-x-2"></i>Setting</a></li>
                     <li className="padding-y-2"><a href="index.html"><i className="pro-switch-lite margin-x-2"></i>Logout</a></li>
                 </ul>
-                <button type="button" onclick="toggle()" className="btn mobile-view"><span className="humberger">&#8942;</span></button>
+                <button type="button" onClick="toggle()" className="btn mobile-view"><span className="humberger">&#8942;</span></button>
             </div>
         </nav>
         );
