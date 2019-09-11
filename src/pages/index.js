@@ -18,8 +18,8 @@ function Home() {
                 <div className="land-roll flex-y-center">
                     <span className="btn teal round">Popular</span>
                     <div className="margin-l-auto d-flex">
-                        <a onClick="popular()" className="btn blue margin-x-2"><i className="pro-fire-lite margin-r-1"></i>Popular</a>
-                        <a onClick="latest()" className="btn blue  margin-x-2"><i className="pro-alarm-lite margin-r-1"></i>Latest</a>
+                        <span onClick="popular()" className="btn blue margin-x-2"><i className="pro-fire-lite margin-r-1"></i>Popular</span>
+                        <span onClick="latest()" className="btn blue  margin-x-2"><i className="pro-alarm-lite margin-r-1"></i>Latest</span>
                     </div>
                 </div>
                 <div id="popular" className="card-wrapper flex-center">

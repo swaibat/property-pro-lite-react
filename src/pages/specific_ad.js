@@ -13,16 +13,16 @@ function Ad() {
                             <div id="slider">
 
                             </div>
-                            <a className="prev" onClick="plusSlides(-1)">&#10094;</a>
-                            <a className="next" onClick="plusSlides(1)">&#10095;</a>
+                            <span className="prev" onClick="plusSlides(-1)">&#10094;</span>
+                            <span className="next" onClick="plusSlides(1)">&#10095;</span>
                             <div id="related" className="row"></div>
                         </div>
                         <div className="flex-y prdt-dtls">
                             <div id="details"></div>
                             <div id="map" className="shadow border-radius"></div>
                             <div className="d-flex float-right margin-t-2">
-                                <a onClick="report()" className="btn orange "><i className="pro-like-lite margin-r-1"></i>Favaourite</a>
-                                <a onClick="report()" className="btn red margin-l-auto"><i className="pro-flag-lite margin-r-1"></i>Report Ad</a>
+                                <span onClick="report()" className="btn orange "><i className="pro-like-lite margin-r-1"></i>Favaourite</span>
+                                <span onClick="report()" className="btn red margin-l-auto"><i className="pro-flag-lite margin-r-1"></i>Report Ad</span>
                             </div>
                         </div>
                     </div>

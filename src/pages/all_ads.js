@@ -17,7 +17,7 @@ function Ads() {
                         <option value="miniflat">miniFlat</option>
                         <option value="others">others</option>
                     </select>
-                    <a className="btn teal"><i className="pro-search-lite margin-r-1"></i></a>
+                    <span className="btn teal"><i className="pro-search-lite margin-r-1"></i></span>
                 </form>
             </div>
             <div className="sub-container margin-2">
@@ -25,9 +25,9 @@ function Ads() {
               
                 </div>
                 <div className="align-center margin-y-3" id="pagination">
-                    <a className="btn blue" href="javascript:prevPage()" id="btn_prev">Prev</a>
+                    <span  className="btn blue" id="btn_prev">Prev</span>
                     <span className="btn blue-txt">page: <span id="page"></span></span>
-                    <a className="btn blue" href="javascript:nextPage()" id="btn_nex">Next</a>  
+                    <sapn  className="btn blue" id="btn_nex">Next</sapn>  
                 </div>
             </div>
         </div>
