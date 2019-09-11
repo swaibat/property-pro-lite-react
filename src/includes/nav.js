@@ -27,12 +27,14 @@ class Nav extends React.Component {
             </div>
             <ul className="margin-x-3">
                 {
-                    navData.map(el =>(
-                        <Link key={navData.id}  to={`/${navData.name}`}>
-                            <li  key={navData.id} onClick={this.handleClick} className="nav-item" ><i className={`${navData.name} margin-r-2`}></i>{navData.name}</li>
-                        </Link>
-                    ))
-                    }
+                    navData.map((el, i) => {
+                        return(
+                            <Link key={i}  to={`/${el.name}`}>
+                                <li onClick={this.handleClick} className="nav-item" ><i className={`${el.icon} margin-r-2`}></i>{el.name}</li>
+                            </Link>
+                        )
+                    })
+                }
             </ul> 
         </ul>) : null}
 
