@@ -31,7 +31,7 @@ class Nav extends React.Component {
                     navData.map((el, i) => {
                         return(
                             <Link key={i}  to={`/${el.name}`}>
-                                <li onClick={this.handleClick} className="nav-item" ><i className={`${el.icon} margin-r-2`}></i>{el.name}</li>
+                                <li onClick={this.handleClick} className={`nav-item ${el.class}`} ><i className={`${el.icon} margin-r-2`}></i>{el.name}</li>
                             </Link>
                         )
                     })
