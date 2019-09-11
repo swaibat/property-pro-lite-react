@@ -52,7 +52,7 @@ fetch(`${document.api.ads_url}/${JSON.parse(location.href.split('=')[1])}`)
                 </div>
                     `
                 others += `
-                <img class="demo cursor" src="${ad.imageurl[i]}" onclick="currentSlide(${1+i})">`  
+                <img class="demo cursor" src="${ad.imageurl[i]}" onClick="currentSlide(${1+i})">`  
             }
 
                 document.querySelector('#slider').innerHTML = imgs;

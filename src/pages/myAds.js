@@ -3,10 +3,10 @@ import React from 'react';
 function MyAds() {
   return (
     <main role="main">
-        <div class="padding-1 page-container ">
-            <h3 class="page-title"><i class="pro-stack-lite margin-r-2 "></i> My Ads</h3>
-            <div class="sub-container transparent">
-                <div class="responsive-tables shadow ">
+        <div className="padding-1 page-container ">
+            <h3 className="page-title"><i className="pro-stack-lite margin-r-2 "></i> My Ads</h3>
+            <div className="sub-container transparent">
+                <div className="responsive-tables shadow ">
                     <table>
                         <thead>
                             <tr>
