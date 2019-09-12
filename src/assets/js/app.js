@@ -13,8 +13,8 @@ element.appendChild(para).setAttributeNode(atto)
 document.querySelector('#flash').classList.add("flash")
 document.querySelector('#flash').classList.add('d-none')
 document.querySelector('#flash').innerHTML=`
-<div  class="color"></div>
-<span id="flash-txt" class="text"></span>`
+<div  className="color"></div>
+<span id="flash-txt" className="text"></span>`
 window.addEventListener('load', function () {
   document.getElementById("loader").classList.remove("loader");
   });

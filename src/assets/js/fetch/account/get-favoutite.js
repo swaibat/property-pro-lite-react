@@ -12,12 +12,12 @@ fetch(`${document.api.users_url}/myAccount`, {
       } else {
         e.data.details.favourite.forEach((favOne) => {
           oneFav += `
-          <li id="${favOne.id}" class="fav-item">
+          <li id="${favOne.id}" className="fav-item">
               <img  src="${favOne.imageurl[0]}">
-              <div class="flex-y  align-center">
-                  <p class="margin-1">${favOne.type}</p>
+              <div className="flex-y  align-center">
+                  <p className="margin-1">${favOne.type}</p>
                   <small>$${favOne.price}</small>
-                  <span  class="badge del-item">x</span>
+                  <span  className="badge del-item">x</span>
               </div>
           </li>
           `;

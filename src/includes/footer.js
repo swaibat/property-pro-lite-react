@@ -3,7 +3,7 @@ import React from 'react';
 function Footer() {
     return (
         <footer className="footer white">
-        <a className="margin-r-4">Property-lite 2019</a>
+        <span className="margin-r-4">Property-lite 2019</span>
         <div id="signup" className="modal-container">
         <div className="modal">
             <button onClick="closeUp()" className="close-modal">X</button>
@@ -32,7 +32,7 @@ function Footer() {
                 <input className="form-input" id="email" type="email" placeholder="Email adress" required/>
                 <input className="form-input" id="password" type="password" placeholder="Password" minlength="5" required/>
                 <button className="btn blue margin-y-4 float-right" type="submit">signin</button>
-                <p className="margin-t-4">Have no account <a className="signup" onClick="signup()">signup</a></p>
+                <p className="margin-t-4">Have no account <span className="signup" onClick="signup()">signup</span></p>
             </form>
         </div>
     </div> 
