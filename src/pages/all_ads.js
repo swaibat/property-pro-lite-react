@@ -1,7 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import Property from '../includes/ad'
 
 function Ads() {
+    const apiUrl = `https://prop-pro.herokuapp.com/api/v2/property`;
+    const [ads, setAds] = useState([])
+    useEffect(()=>{
+        getAds();
+    },[])
+    const getAds = async ()=>{
+        const response = await fetch(apiUrl);
+        const resData = await response.json();
+        console.log(resData.data[0])
+        setAds(resData .data)
+    }
   return (
+
 <main role="main">
         <div className="padding-1 page-container ">
             <div className="wrap-title flex-y-center margin-x-2">
@@ -22,6 +35,16 @@ function Ads() {
             </div>
             <div className="sub-container margin-2">
                 <div id="all-ads" className="main">
+                    {ads.map((ad,key)=>(
+                        <Property
+                            key={ad.id}
+                            type={ad.type}
+                            price ={ad.price}
+                            image ={ad.imageurl[0]}
+                            city ={ad.city}
+                            views ={ad.views}
+                            />
+                    ))}
               
                 </div>
                 <div className="align-center margin-y-3" id="pagination">

@@ -15,7 +15,7 @@ function App() {
   return (
     <Router>
       <div className={App}>
-      <div id="bg" class="bg"></div>
+      <div id="bg" className="bg"></div>
         <Nav/>
           <Switch>
             <Route path="/" exact component={Home}/>

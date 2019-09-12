@@ -33,7 +33,7 @@
   
 //   for (let i = (page - 1) * records_per_page; i < (page * records_per_page) && i < objJson.length; i++) {
 //     // console.log(objJson[i].firstElementChild.textContent)
-//     listing_table.innerHTML += `<div class="card">${objJson[i].innerHTML}</div>`;
+//     listing_table.innerHTML += `<div className="card">${objJson[i].innerHTML}</div>`;
 
 //   }
 
